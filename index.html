@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard design</title>
+
+  <!-- google font link   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- google icon link  -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- css link  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- dashboard design sidebar -->
+  <!-- topbar here -->
+  <div class="topbar">
+    <div class="logo">
+      <img src="img/resturent_logo.png" alt="logo">
+    </div>
+    <div class="search radius_rounded">
+      <input type="text" name="search" id="search" placeholder="search here....">
+      <span class="material-symbols-outlined">
+        search
+      </span>
+    </div>
+    <div class="topbar_rightmenu">
+      <ul>
+        <li class="theme_btn"><span class="material-symbols-outlined">
+            light_mode
+          </span></li>
+        <li><span class="material-symbols-outlined">
+            notifications
+          </span></li>
+        <li><span class="material-symbols-outlined">
+            widgets
+          </span></li>
+        <li class="user_img">
+          <div><img src="img/profile1.png" alt="USER"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!---------- wrapper is the main context here -------------- -->
+
+  <div class="wrapper">
+    <div class="left_content">
+      <aside>
+        <ul>
+          <li>
+            <span class="material-symbols-outlined">
+              home
+            </span>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">
+              person
+            </span>
+            <a href="#">USER</a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <div class="right_content">
+      <h1>Ecommerce Dashboard</h1>
+      <div class="rc_top">
+        <div class="rc_card">
+          <div><span class="material-symbols-outlined">
+              overview
+            </span></div>
+          <h3>Total Sales</h3>
+          <h1>$1240</h1>
+          <p>last 24 hours</p>
+          <div class="circle_progress"></div>
+        </div>
+        <div class="rc_card">
+          <div><span class="material-symbols-outlined">
+              point_of_sale
+            </span></div>
+          <h3>Total Sales</h3>
+          <h1>$1240</h1>
+          <p>last 24 hours</p>
+          <div class="circle_progress"></div>
+        </div>
+        <div class="rc_card">
+          <div><span class="material-symbols-outlined">
+              real_estate_agent
+            </span></div>
+          <h3>Total Sales</h3>
+          <h1>$1240</h1>
+          <p>last 24 hours</p>
+          <div class="circle_progress"></div>
+        </div>
+      </div>
+
+
+      <!------------------ last order here --------------->
+      <div class="recent_orders">
+        <h3>recent orders</h3>
+        <table>
+          <tr>
+            <th>Product name</th>
+            <th>Product ID</th>
+            <th>Payment method</th>
+            <th>Status</th>
+            <th>Details</th>
+            <th>Print</th>
+          </tr>
+          <tbody>
+            <td>Foldable mini drone</td>
+            <td>851250</td>
+            <td>Cash on delivery</td>
+            <td><span>Pending</span></td>
+            <td>Check details</td>
+            <td><button><span class="material-symbols-outlined">
+              print
+              </span></button></td>
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

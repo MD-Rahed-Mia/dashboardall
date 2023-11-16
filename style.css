@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* all root design will be here  */
+
+:root {
+  --bg_color: ;
+  --btn-primay: ;
+  --btn_secondary: ;
+  --text-primary: ;
+  --theme-btn: #fbc093;
+  --white: white;
+  --color-day: #222;
+  --icon-bg: #ff9470;
+  --light-gray: rgb(155, 154, 154);
+}
+
+.radius_rounded {
+  border-radius: 50px;
+}
+
+/* topbar design here  */
+
+.topbar {
+  width: 100%;
+  min-height: 100px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.09);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+}
+
+.topbar .logo {
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.topbar .logo img {
+  width: 100px;
+}
+
+.topbar .search {
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 500px;
+}
+
+.search input {
+  width: 300px;
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+}
+
+.topbar_rightmenu ul {
+  display: flex;
+  align-items: center;
+}
+
+.topbar_rightmenu ul li {
+  list-style-type: none;
+  margin-right: 30px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar_rightmenu ul .user_img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.theme_btn {
+  background: var(--theme-btn);
+  color: var(--white);
+}
+
+/* ---------------------wrapper here ---------------- */
+
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.wrapper aside {
+  min-width: 250px;
+  min-height: 100vh;
+  background: var(--white);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+
+aside ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  column-gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+aside ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--color-day);
+}
+
+aside ul li:hover {
+  background: var(--color-day);
+  color: var(--white);
+}
+
+aside ul li:hover a {
+  color: var(--white);
+}
+
+
+/* right side content start here  */
+
+.right_content {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.rc_top {
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+.rc_card {
+  padding: 1.5rem;
+  border-radius: 30px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.01), 1px 1px 15px rgba(0, 0, 0, 0.01) inset;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: relative;
+}
+
+.rc_card h3 {
+  font-size: 0.8rem;
+}
+
+.rc_card span {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  margin: 0.6rem 0;
+}
+
+.rc_card div span:nth-child(1) {
+  background: var(--icon-bg);
+}
+
+.rc_card div span:nth-child(2) {
+  background: #12CBC4;
+}
+
+.rc_card div span:nth-child(3) {
+  background: #12CBC4;
+}
+
+.circle_progress {
+  background: lightgray;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  background: conic-gradient(var(--icon-bg) 300deg, var(--white) 80deg);
+}
+
+.circle_progress::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--white);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.rc_card p {
+  font-size: 0.8rem;
+  color: var(--light-gray);
+}
+/* ------------------- recent orders table---------------------*/
+
